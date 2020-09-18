@@ -37,7 +37,7 @@ class Classifier():
         self.input_tensor.copyFrom(tmp_input)
         self.interpreter.runSession(self.session)
         output_tensor = self.interpreter.getSessionOutput(self.session)
-        preds = output_tensor.getData()[0]
+        preds = output_tensor.getData()
 
         top = 1
         top_indices = np.array(preds).argsort()[-top:][::-1]
