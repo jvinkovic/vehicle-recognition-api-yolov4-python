@@ -6,6 +6,8 @@
 
 A Python server for [Spectrico's vehicle make and color classification](http://spectrico.com/car-make-model-recognition.html). The Flask server exposes REST API for car brand&color recognition. It consists of an object detector for finding the cars, and two classifiers to recognize the makes and the colors of the detected cars. The object detector is an implementation of YOLOv4 (OpenCV DNN backend). YOLOv4 weights were downloaded from [AlexeyAB/darknet](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights). The classifiers are based on MobileNet v3 (Alibaba MNN backend). 
 
+Web demo of the free vehicle recognition API: [Vehicle Make and Color Recognition](http://spectrico.com/demo-car-brand-recognition.html)
+
 The full version recognizes the make, model, and color of the vehicles. Here is a web demo to test it: [Vehicle Make and Model Recognition](http://spectrico.com/demo-car-mmr.html)
 
 The API is simple: make a HTTP POST request to local host on port 6000.
